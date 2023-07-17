@@ -1,0 +1,15 @@
+.store .box-container .box span, .material-symbols-outlined {
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #ffc246;
+    font-size: 3rem;
+    margin: 2rem 0;
+    transition: .2s;
+}
+.store .box-container .box:hover span, .material-symbols-outlined i {
+    background: #f9580e;
+}

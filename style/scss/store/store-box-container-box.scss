@@ -1,0 +1,29 @@
+.store .box-container .box {
+    height: 25rem;
+    width: 25rem;
+    background: #171717;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, 0 .5);
+    margin: 2rem;
+    cursor: pointer;
+}
+.store .box-container .box h3 {
+    font-size: 2rem;
+    color: #f9580e;
+    transition: .2s;
+
+}
+
+.store .box-container .box p {
+    font-size: 1.2rem;
+    padding: .7rem 2rem;
+    color: #eee;
+}
+.store .box-container .box:hover h3 {
+    color: #ffc246;
+}
+
+.store .box-container .box h4 {
+    color: #ffc246;
+}

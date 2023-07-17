@@ -1,0 +1,15 @@
+.home .content button {
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    background: #f9580e;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    border-color: #f9580e;
+}
+
+.home .content button:hover {
+    background: none;
+    border: .2rem solid #f9580e;
+}

@@ -1,0 +1,22 @@
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .1s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #f9580e;
+}
