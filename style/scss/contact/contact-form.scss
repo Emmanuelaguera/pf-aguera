@@ -1,42 +1,56 @@
+$color_1: #1c0a02;
+$color_2: #fff;
+$color_3: #f9580e;
+
 .form-container {
-    display: grid;
-    justify-content: center;
-    
- }
- 
- .form-container input, textarea {
-     height: 4rem;
-     width: 100%;
-     background: #ec9046;
-     padding: 0 1rem;
-     margin: 1rem 0;
-     color: #1c0a02;
-     font-size: 1.7rem;
-     transition: .2s linear;
- }
- 
- .form-container input:focus, textarea:focus {
-     border: .4rem solid #f9580e;
- }
- .form-container textarea {
-     height: 10rem;
-     border-radius: 1rem;
-     padding: 1rem;
-     resize: none;
- }
- 
- .form-container input [type="submit"] {
-     height: 4rem;
-     width: 15rem;
-     background: #f9580e;
-     color: #fff;
-     cursor: pointer;
-     font-size: 2rem;
-     transition: .2s;
- }
- 
- .form-container input[type="submit"]:hover {
-     background: none;
-     color: #f9580e;
-     border: .2rem solid #f9580e;
- }
+	display: grid;
+	justify-content: center;
+	input {
+		height: 4rem;
+		width: 100%;
+		background: #ec9046;
+		padding: 0 1rem;
+		margin: 1rem 0;
+		color: $color_1;
+		font-size: 1.7rem;
+		transition: .2s linear;
+		&:focus {
+			border: .4rem solid #f9580e;
+		}
+		[type="submit"] {
+			height: 4rem;
+			width: 15rem;
+			background: #f9580e;
+			color: $color_2;
+			cursor: pointer;
+			font-size: 2rem;
+			transition: .2s;
+		}
+	}
+	textarea {
+		height: 10rem;
+		border-radius: 1rem;
+		padding: 1rem;
+		resize: none;
+	}
+	input[type="submit"] {
+		&:hover {
+			background: none;
+			color: $color_3;
+			border: .2rem solid #f9580e;
+		}
+	}
+}
+textarea {
+	height: 4rem;
+	width: 100%;
+	background: #ec9046;
+	padding: 0 1rem;
+	margin: 1rem 0;
+	color: $color_1;
+	font-size: 1.7rem;
+	transition: .2s linear;
+	&:focus {
+		border: .4rem solid #f9580e;
+	}
+}

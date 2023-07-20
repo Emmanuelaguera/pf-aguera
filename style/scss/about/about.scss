@@ -1,16 +1,13 @@
+$color_1: #eee;
+
 .about {
-    background: #171717;
-
-}
-
-.about .title {
-    margin-bottom: 3rem;
-
-}
-
-.about h3 {
-    font-size: 2rem;
-    color: #eee;
-    padding: 1rem 15rem;
-
+	background: #171717;
+	.title {
+		margin-bottom: 3rem;
+	}
+	h3 {
+		font-size: 2rem;
+		color: $color_1;
+		padding: 1rem 15rem;
+	}
 }

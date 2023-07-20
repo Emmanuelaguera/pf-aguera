@@ -1,9 +1,11 @@
+$font-family_1: Arial, Helvetica, sans-serif;
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    outline: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	font-family: $font-family_1;
+	text-transform: uppercase;
+	text-decoration: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }

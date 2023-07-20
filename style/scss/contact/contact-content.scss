@@ -1,12 +1,15 @@
-.contact h1 {
-    text-align: center;
-    font-size: 3rem;
-    color: #f9580e; 
-}
+$color_1: #f9580e;
+$color_2: #eee;
 
-.contact h3 {
-    text-align: center;
-    font-size: 2rem;
-    color: #eee;
-
+.contact {
+	h1 {
+		text-align: center;
+		font-size: 3rem;
+		color: $color_1;
+	}
+	h3 {
+		text-align: center;
+		font-size: 2rem;
+		color: $color_2;
+	}
 }
