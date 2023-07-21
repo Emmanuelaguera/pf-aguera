@@ -1,67 +1,68 @@
+
 @media (max-whit: 768xp) {
-
-    html {
-        font-size: 55%;
-    }
-    header .fa-bars {
-        display: block;
-    }
-
-    header .navbar {
-        position: fixed;
-        top: -100rem;
-        left: 0;
-        width: 100%;
-        background: #171717;
-        border-radius: 1rem;
-        opacity: 0;
-        transition: .2s linear;
-    }
-
-    header .navbar ul {
-        flex-flow: column;
-        padding: 2rem 0;
-    }
-
-    header .navbar ul li {
-        margin: 1rem 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    header .navbar ul li a {
-        font-size: 3rem;
-        display: block;
-    }
-
-    header .nav-toggle {
-        top: 5.5rem;
-        opacity: 1;
-    }
-
-    .home .content p {
-        padding: 1.5rem 2rem;
-    }
-
-    .about .row {
-        flex-direction: column-reverse;
-    }
-
-    .about .row .image img {
-        height: 30vh;
-        width: 90vw;
-    }
-
-    .about .row .content {
-        padding: 0 2.5rem;
-    }
-
-    .contact .row {
-        flex-flow: column;
-    }
-
-    .contact .row .form-container {
-        width: 90%;
-        padding: 0;
-    }
+	html {
+		font-size: 55%;
+	}
+	header {
+		.fa-bars {
+			display: block;
+		}
+		.navbar {
+			position: fixed;
+			top: -100rem;
+			left: 0;
+			width: 100%;
+			background: #171717;
+			border-radius: 1rem;
+			opacity: 0;
+			transition: .2s linear;
+			ul {
+				flex-flow: column;
+				padding: 2rem 0;
+				li {
+					margin: 1rem 0;
+					width: 100%;
+					text-align: center;
+					a {
+						font-size: 3rem;
+						display: block;
+					}
+				}
+			}
+		}
+		.nav-toggle {
+			top: 5.5rem;
+			opacity: 1;
+		}
+	}
+	.home {
+		.content {
+			p {
+				padding: 1.5rem 2rem;
+			}
+		}
+	}
+	.about {
+		.row {
+			flex-direction: column-reverse;
+			.image {
+				img {
+					height: 30vh;
+					width: 90vw;
+				}
+			}
+			.content {
+				padding: 0 2.5rem;
+			}
+		}
+	}
+	.contact {
+		.row {
+			flex-flow: column;
+			.form-container {
+				width: 90%;
+				padding: 0;
+			}
+		}
+	}
 }

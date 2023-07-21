@@ -1,18 +1,28 @@
-button:hover {
-    height: 5rem;
-    width: 17rem;
-    background: #f9580e;
-    color: #eee;
-    border-radius: 1rem;
-    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
-    cursor: pointer;
-    font-size: 2rem;
-    transition: .2s;
-    margin-top: 2rem;
+$color_1: #eee;
 
+button {
+	&:hover {
+		height: 5rem;
+		width: 17rem;
+		background: #f9580e;
+		color: $color_1;
+		border-radius: 1rem;
+		box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .3);
+		cursor: pointer;
+		font-size: 2rem;
+		transition: .2s;
+		margin-top: 2rem;
+	}
 }
-
-.about .row .content button:hover {
-    background: none;
-    border: .2rem solid #f9580e;
+.about {
+	.row {
+		.content {
+			button {
+				&:hover {
+					background: none;
+					border: .2rem solid #f9580e;
+				}
+			}
+		}
+	}
 }

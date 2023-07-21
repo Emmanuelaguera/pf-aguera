@@ -1,16 +1,20 @@
+$color_1: #eee;
+
 button {
-    height: 5rem;
-    width: 20rem;
-    border-radius: 1rem;
-    background: #f9580e;
-    color: #eee;
-    font-size: 2rem;
-    cursor: pointer;
-    transition: .2s;
-
+	height: 5rem;
+	width: 20rem;
+	border-radius: 1rem;
+	background: #f9580e;
+	color: $color_1;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: .2s;
 }
-
-.store button:hover {
-    background: none;
-    border: .2rem solid #f9580e;
+.store {
+	button {
+		&:hover {
+			background: none;
+			border: .2rem solid #f9580e;
+		}
+	}
 }

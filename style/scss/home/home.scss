@@ -1,11 +1,12 @@
-.home {
-    min-height: 50vh;
-    background-color: #171717;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 0;
-    overflow: hidden;
-    position: relative;
+$background-color_1: #171717;
 
+.home {
+	min-height: 50vh;
+	background-color: $background-color_1;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+	overflow: hidden;
+	position: relative;
 }
