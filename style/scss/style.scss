@@ -11,6 +11,7 @@ $background-color_3: #f9580e;
 $border-color_1: #f9580e;
 
 @import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200";
+
 * {
 	font-family: $font-family_1;
 	text-transform: uppercase;
@@ -19,18 +20,22 @@ $border-color_1: #f9580e;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 	&::section {
 		background: #f9580e;
 		color: $color_1;
 	}
 }
+
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
 }
+
 body {
 	background-color: $background-color_1;
 }
+
 .heading {
 	font-size: 4rem;
 	color: $color_2;
@@ -39,6 +44,7 @@ body {
 	letter-spacing: 2rem;
 	font-weight: 600;
 }
+
 .title {
 	padding: 0 1rem;
 	font-size: 2rem;
@@ -46,9 +52,10 @@ body {
 	font-weight: 400;
 	color: $color_1;
 }
+
 header {
 	width: 100%;
-	background: linear-gradient(rgba(51, 28, 10, 0.2), rgba(236,134,0,0.8));
+	background: linear-gradient(rgba(51, 28, 10, 0.2), rgba(236, 134, 0, 0.8));
 	position: fixed;
 	display: flex;
 	align-items: center;
@@ -56,43 +63,35 @@ header {
 	padding: 1rem 2rem;
 	z-index: 1000;
 	transition: .2s;
-	.navbar {
-		ul {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			list-style: none;
-			li {
-				margin: 0 1rem;
-				a {
-					font-size: 2rem;
-					color: $color_1;
-					transition: .1s;
-					&:hover {
-						color: $color_2;
-					}
-				}
-				.active {
-					color: $color_2;
-				}
+
+	.top-nav ul li {
+		a {
+			&:hover {
+				color: $color_2;
 			}
 		}
+		.active {
+			color: $color_2;
+		}
 	}
+
 	.logo {
 		font-size: 2.5rem;
 		color: $color_1;
 		text-transform: uppercase;
 	}
+
 	span {
 		.material-symbols-outlined {
 			font-size: 1rem;
 			color: $color_3;
 			cursor: pointer;
 			display: none;
-			transition: 2.s;
+			transition: 2s;
 		}
 	}
 }
+
 .home {
 	min-height: 50vh;
 	background-color: $background-color_2;
@@ -102,6 +101,7 @@ header {
 	z-index: 0;
 	overflow: hidden;
 	position: relative;
+
 	.content {
 		display: flex;
 		align-items: center;
@@ -109,6 +109,7 @@ header {
 		flex-flow: column;
 		padding-top: 25rem;
 		text-align: center;
+
 		h1 {
 			font-size: 5rem;
 			color: $color_2;
@@ -116,11 +117,13 @@ header {
 			text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
 			text-transform: uppercase;
 		}
+
 		p {
 			font-size: 2rem;
 			color: $color_4;
 			padding: 1rem 5rem;
 		}
+
 		button {
 			height: 5rem;
 			width: 20rem;
@@ -130,6 +133,7 @@ header {
 			font-size: 2rem;
 			cursor: pointer;
 			border-color: $border-color_1;
+
 			&:hover {
 				background: none;
 				border: .2rem solid #f9580e;
@@ -137,23 +141,25 @@ header {
 		}
 	}
 }
+
 .store {
 	text-align: center;
-	margin: 100px 0;
+
 	.box-container {
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
 		text-align: center;
+
 		.box {
-			height: 25rem;
 			width: 25rem;
 			background: #171717;
 			text-align: center;
 			border-radius: 1rem;
-			box-shadow: 0 .3rem 5rem rgb(0, 0, 0 .5);
+			box-shadow: 0 .3rem 5rem rgba(0, 0, 0, .5);
 			margin: 2rem;
 			cursor: pointer;
+
 			span {
 				height: 6rem;
 				width: 6rem;
@@ -166,29 +172,35 @@ header {
 				margin: 2rem 0;
 				transition: .2s;
 			}
+
 			h3 {
 				font-size: 2rem;
 				color: $color_2;
 				transition: .2s;
 			}
+
 			p {
 				font-size: 1.2rem;
 				padding: .7rem 2rem;
 				color: $color_4;
 			}
+
 			&:hover {
 				span {
 					background: #f9580e;
 				}
+
 				h3 {
 					color: $color_5;
 				}
 			}
+
 			h4 {
 				color: $color_5;
 			}
 		}
 	}
+
 	button {
 		&:hover {
 			background: none;
@@ -196,6 +208,7 @@ header {
 		}
 	}
 }
+
 .material-symbols-outlined {
 	height: 6rem;
 	width: 6rem;
@@ -217,14 +230,17 @@ header {
 	font-size: 3rem;
 	margin: 2rem 0;
 	transition: .2s;
+
 	i {
 		background: #f9580e;
 	}
+
 	&:hover {
 		background: none;
 		border: .2rem solid #f9580e;
 	}
 }
+
 button {
 	height: 5rem;
 	width: 20rem;
@@ -234,6 +250,7 @@ button {
 	font-size: 2rem;
 	cursor: pointer;
 	transition: .2s;
+
 	&:hover {
 		height: 5rem;
 		width: 17rem;
@@ -247,22 +264,31 @@ button {
 		margin-top: 2rem;
 	}
 }
+
+#store, #about, #price, #contact {
+	padding-top: 20px;
+}
+
 .about {
 	background: #171717;
+
 	.title {
 		margin-bottom: 3rem;
 	}
+
 	h3 {
 		font-size: 2rem;
 		color: $color_4;
 		padding: 1rem 15rem;
 	}
+
 	.row {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+
 		.image {
 			img {
 				height: 90vh;
@@ -270,13 +296,16 @@ button {
 				margin-top: 100px;
 			}
 		}
+
 		.content {
 			padding-left: 5rem;
 			margin: 5rem 0;
+
 			h3 {
 				font-size: 3rem;
 				color: $color_2;
 			}
+
 			button {
 				&:hover {
 					background: none;
@@ -286,6 +315,7 @@ button {
 		}
 	}
 }
+
 .price {
 	.box-container {
 		width: 100%;
@@ -295,25 +325,30 @@ button {
 		margin: 0 auto;
 		padding: 4rem 0;
 		flex-wrap: wrap;
+
 		.box {
 			background: #171717;
 			margin: 3.5rem 2rem;
 			text-align: center;
 			border-radius: 1rem;
+
 			img {
 				height: 100vh;
 				width: 100vw;
 				margin-top: 100px;
 			}
+
 			h3 {
 				font-size: 2rem;
 				color: $color_2;
 			}
+
 			p {
 				font-size: 1.5rem;
 				color: $color_1;
 				padding: 1rem 0;
 			}
+
 			h2 {
 				font-size: 3rem;
 				background-color: $background-color_3;
@@ -321,6 +356,7 @@ button {
 		}
 	}
 }
+
 .service {
 	span {
 		height: 6rem;
@@ -337,21 +373,26 @@ button {
 		border: .2rem solid #f9580e;
 	}
 }
+
 .contact {
 	h1 {
 		text-align: center;
 		font-size: 3rem;
 		color: $color_2;
 	}
+
 	h3 {
 		text-align: center;
 		font-size: 2rem;
 		color: $color_4;
 	}
 }
+
 .form-container {
 	display: grid;
+	grid-template-columns: 50%;
 	justify-content: center;
+
 	input {
 		height: 4rem;
 		width: 100%;
@@ -361,9 +402,11 @@ button {
 		color: $color_6;
 		font-size: 1.7rem;
 		transition: .2s linear;
+
 		&:focus {
 			border: .4rem solid #f9580e;
 		}
+
 		[type="submit"] {
 			height: 4rem;
 			width: 15rem;
@@ -374,12 +417,14 @@ button {
 			transition: .2s;
 		}
 	}
+
 	textarea {
 		height: 10rem;
 		border-radius: 1rem;
 		padding: 1rem;
 		resize: none;
 	}
+
 	input[type="submit"] {
 		&:hover {
 			background: none;
@@ -388,6 +433,7 @@ button {
 		}
 	}
 }
+
 textarea {
 	height: 4rem;
 	width: 100%;
@@ -397,27 +443,32 @@ textarea {
 	color: $color_6;
 	font-size: 1.7rem;
 	transition: .2s linear;
+
 	&:focus {
 		border: .4rem solid #f9580e;
 	}
 }
+
 .footer {
 	width: 100%;
 	height: 100%;
 	background-color: $background-color_1;
 }
+
 .image {
 	img {
 		width: 70px;
 		height: 70px;
 	}
 }
+
 .image2 {
 	img {
 		width: 110px;
 		height: 80px;
 	}
 }
+
 .image3 {
 	img {
 		width: 60px;
@@ -428,42 +479,23 @@ textarea {
 		width: 60px;
 	}
 }
+
 @media (max-whit: 768xp) {
 	html {
 		font-size: 55%;
 	}
+
 	header {
 		.fa-bars {
 			display: block;
 		}
-		.navbar {
-			position: fixed;
-			top: -100rem;
-			left: 0;
-			width: 100%;
-			background: #171717;
-			border-radius: 1rem;
-			opacity: 0;
-			transition: .2s linear;
-			ul {
-				flex-flow: column;
-				padding: 2rem 0;
-				li {
-					margin: 1rem 0;
-					width: 100%;
-					text-align: center;
-					a {
-						font-size: 3rem;
-						display: block;
-					}
-				}
-			}
-		}
+
 		.nav-toggle {
 			top: 5.5rem;
 			opacity: 1;
 		}
 	}
+
 	.home {
 		.content {
 			p {
@@ -471,26 +503,188 @@ textarea {
 			}
 		}
 	}
+
 	.about {
 		.row {
 			flex-direction: column-reverse;
+
 			.image {
 				img {
 					height: 30vh;
 					width: 90vw;
 				}
 			}
+
 			.content {
 				padding: 0 2.5rem;
 			}
 		}
 	}
+
 	.contact {
 		.row {
 			flex-flow: column;
+
 			.form-container {
 				width: 90%;
 				padding: 0;
+			}
+		}
+	}
+}
+
+$color_1: #FFF;
+$color_2: #f9580e;
+$color_3: white;
+$background-color_1: transparent;
+$background-color_2: #fff;
+$background-color_3: #222;
+
+.top-nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: $background-color_1;
+	color: $color_1;
+	height: 50px;
+	padding: 1em;
+}
+
+.menu {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+
+	>li {
+		color: $color_1;
+		margin: 0 1rem;
+		overflow: hidden;
+		font-size: 20px;
+	}
+}
+
+a {
+	color: $color_1;
+
+	&:hover {
+		color: $color_2;
+	}
+}
+
+.menu-button-container {
+	display: none;
+	height: 100%;
+	width: 30px;
+	cursor: pointer;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu-toggle {
+	display: none;
+
+	&:checked+.menu-button-container {
+		.menu-button {
+			&::before {
+				margin-top: 0px;
+				transform: rotate(405deg);
+			}
+
+			background: rgba(255, 255, 255, 0);
+
+			&::after {
+				margin-top: 0px;
+				transform: rotate(-405deg);
+			}
+		}
+	}
+}
+
+.menu-button {
+	display: block;
+	background-color: $background-color_2;
+	position: absolute;
+	height: 4px;
+	width: 30px;
+	transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	border-radius: 2px;
+
+	&::before {
+		display: block;
+		background-color: $background-color_2;
+		position: absolute;
+		height: 4px;
+		width: 30px;
+		transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		border-radius: 2px;
+		content: '';
+		margin-top: -8px;
+	}
+
+	&::after {
+		display: block;
+		background-color: $background-color_2;
+		position: absolute;
+		height: 4px;
+		width: 30px;
+		transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		border-radius: 2px;
+		content: '';
+		margin-top: 8px;
+	}
+}
+
+@media (max-width: 700px) {
+	.menu-button-container {
+		display: flex;
+	}
+
+	.menu {
+		position: absolute;
+		top: 0;
+		margin-top: 50px;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+
+		>li {
+			display: flex;
+			justify-content: center;
+			margin: 0;
+			padding: 0.5em 0;
+			width: 100%;
+			color: $color_3;
+			background-color: $background-color_3;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #444;
+			}
+		}
+	}
+
+	#menu-toggle~.menu {
+		li {
+			height: 0;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+		}
+	}
+
+	#menu-toggle {
+		&:checked~.menu {
+			li {
+				border: 1px solid #333;
+				height: 2.5em;
+				padding: 0.5em;
+				transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
 			}
 		}
 	}
